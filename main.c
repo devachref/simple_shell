@@ -16,7 +16,7 @@ int main(int ac, char **argv)
                 line = read_line();
                 if (line == NULL) /* reache EDF ctr + D */
                 {
-                        if (isatty(STDOUT_FILENO))
+                        if (isatty(STDIN_FILENO))
                                 write(STDOUT_FILENO, "\n", 1);
                         return (status);
                 }

@@ -6,7 +6,7 @@ char *read_line(void)
 	size_t len = 0;
 	ssize_t n;
 
-	if (isatty(STDOUT_FILENO))
+	if (isatty(STDIN_FILENO))
 	{
 		write(STDOUT_FILENO, "$ ", 2);
 	}
