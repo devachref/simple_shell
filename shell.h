@@ -31,7 +31,21 @@ void freearray(char **arr);
 void prterror(char *name, char *cmd, int idx);
 char *_itoa(int n);
 void rev_str(char *str, int len);
-
 /*_____________________________________*/
+
+/*builtins.c*/
+int builtin(char *command);
+void hndl_bltn(char **command, char **argv , int *status, int idx);
+void e_xit(char **command, char **argv, int *status, int idx);
+void print_env(char **command, int *status);
+/*_____________________________________*/
+
+
+/*new_tools*/
+int positive_nbr(char *str);
+int _atoi(char *str);
+/*_____________________________________*/
+
+
 
 #endif
